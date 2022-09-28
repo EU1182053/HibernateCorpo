@@ -1,0 +1,38 @@
+package layer.entity;
+import javax.persistence.*;
+
+@Entity
+@Table(name="empaddress")
+public class Employee {
+	@Id
+	@GeneratedValue(strategy = GenerationType.AUTO)
+	private int id;
+	private String empname;
+	private double salary;
+	
+	@OneToOne
+	@PrimaryKeyJoinColumn
+	
+	private Employee employee;
+	
+	public int getId() {
+		return id;
+	}
+	public void setId(int id) {
+		this.id = id;
+	}
+	public String getEmpname() {
+		return empname;
+	}
+	public void setEmpname(String empname) {
+		this.empname = empname;
+	}
+	public double getSalary() {
+		return salary;
+	}
+	public void setSalary(double salary) {
+		this.salary = salary;
+	}
+	
+	
+}

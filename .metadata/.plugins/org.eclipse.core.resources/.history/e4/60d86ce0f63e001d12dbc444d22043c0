@@ -1,0 +1,13 @@
+package layer.utility;
+
+import org.hibernate.SessionFactory;
+
+public class HibernateUtility {
+	
+	public static SessionFactory sf;
+	
+	public static SessionFactory getSessionFactory() {
+		
+	}
+
+}

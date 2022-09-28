@@ -1,0 +1,16 @@
+<?xml version="1.0" ?>
+ 
+<!DOCTYPE hibernate-mapping PUBLIC
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+    "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+
+<hibernate-mapping>
+
+<class name="first.Product" table="pro_info">
+<property name="pid" column="price" length="15"></property>
+<property name="pname" column="price" length="15"></property>
+<property name="price" column="price" length="15"></property>
+</class>
+ 
+</hibernate-mapping>

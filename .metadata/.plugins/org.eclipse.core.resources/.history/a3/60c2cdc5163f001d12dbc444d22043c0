@@ -1,0 +1,57 @@
+package layer.entity;
+import javax.persistence.*;
+
+@Entity
+@Table(name="addressData")
+public class Address {
+	
+	@Id
+	@GeneratedValue(strategy = GenerationType.AUTO)
+	private long id;
+	@Override
+	public String toString() {
+		return "Address [id=" + id + ", addLine1=" + addLine1 + ", city=" + city + ", zipcode=" + zipcode
+				+ ", employee=" + employee + "]";
+	}
+	private String addLine1;
+	private String city;
+	private String zipcode;
+	
+	@OneToOne
+	@PrimaryKeyJoinColumn
+	
+	private Employee employee;
+	
+	
+	
+	public Address(String addLine1, String city, String zipcode) {
+		super();
+		this.addLine1 = addLine1;
+		this.city = city;
+		this.zipcode = zipcode;
+	}
+	public long getId() {
+		return id;
+	}
+	public void setId(long id) {
+		this.id = id;
+	}
+	public String getAddLine1() {
+		return addLine1;
+	}
+	public void setAddLine1(String addLine1) {
+		this.addLine1 = addLine1;
+	}
+	public String getCity() {
+		return city;
+	}
+	public void setCity(String city) {
+		this.city = city;
+	}
+	public String getZipcode() {
+		return zipcode;
+	}
+	public void setZipcode(String zipcode) {
+		this.zipcode = zipcode;
+	}
+}

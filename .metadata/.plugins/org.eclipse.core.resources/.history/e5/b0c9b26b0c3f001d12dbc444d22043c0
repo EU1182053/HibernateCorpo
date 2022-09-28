@@ -1,0 +1,5 @@
+package layer.entity;
+
+public class Address {
+
+}

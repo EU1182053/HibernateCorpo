@@ -1,0 +1,5 @@
+package layer.utility;
+
+public class HibernateUtility {
+
+}

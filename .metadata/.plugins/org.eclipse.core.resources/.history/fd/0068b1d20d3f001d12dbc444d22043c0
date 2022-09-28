@@ -1,0 +1,14 @@
+package layer.entity;
+import javax.persistence.*;
+
+@Entity
+@Table(name="empData")
+public class Employee {
+	
+	@Id
+	@GeneratedValue(strategy = GenerationType.AUTO)
+	private int id;
+	private String empname;
+	private double salary;
+	
+}

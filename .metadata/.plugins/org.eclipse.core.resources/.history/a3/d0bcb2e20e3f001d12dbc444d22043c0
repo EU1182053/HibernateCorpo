@@ -1,0 +1,9 @@
+package layer.dao;
+
+public class EmployeeDao {
+	
+	public void addEmployee(Employee employee) {}
+	
+	
+
+}
